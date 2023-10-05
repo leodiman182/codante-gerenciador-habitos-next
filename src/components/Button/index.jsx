@@ -1,7 +1,9 @@
-export default function Button({ children }) {
+import { Button as MUIButton } from "@mui/material";
+
+export default function Button({ text }) {
   return (
-    <button className="bg-primary-color text-primary-dark-color w-full rounded-sm py-[2px] text-[26px]">
-      {children}
-    </button>
+    <MUIButton color="primary" variant="outlined">
+      {text}
+    </MUIButton>
   );
 }
